@@ -1,8 +1,0 @@
-version: 2
-
-sources:
-  - name: dbt_test_schema  # Replace with your actual source schema
-    database: dbt_test_db  # Replace with your database name
-    schema: dbt_test_schema  # Replace with your schema name
-    tables:
-      - name: fact_sales
