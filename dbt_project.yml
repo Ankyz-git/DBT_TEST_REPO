@@ -1,14 +1,4 @@
-name: dbt_test_repo
+name: dbt_test_project
+profile: dbt_test_profile   # Must match the name in profiles.yml
 
-
-sources:
-  dbt_test_schema:  # Schema containing the source tables
-    database: dbt_test_db  # Snowflake database name
-    schema: dbt_test_schema  
-    tables:
-      fact_sales:  # Reference fact table
-
-models:
-  dbt_test_repo:
-    test_dbt_model:
-      materialized: table  # Ensures table creation
+      

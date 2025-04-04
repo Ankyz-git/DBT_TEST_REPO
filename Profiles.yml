@@ -1,0 +1,15 @@
+dbt_test_profile:   # Can be any name; must match dbt_project.yml
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: JJIVGWT-CJ95375  # Example: abcd-xy12345 (NO .snowflakecomputing.com)
+      user: ANKYZ
+      password: Axelblaz@0075295
+      role: ACCOUNTADMIN          # Or any role with write access
+      database: DBT_TEST_DB
+      warehouse: COMPUTE_WH
+      schema: DBT_TEST_SCHEMA
+      threads: 1
+      client_session_keep_alive: false
+
