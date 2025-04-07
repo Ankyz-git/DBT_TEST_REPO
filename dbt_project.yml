@@ -1,4 +1,9 @@
 name: dbt_test_project
 profile: dbt_test_profile   # Must match the name in profiles.yml
 
-      
+#source-paths: ["DBT_TEST_REPO"]
+
+models:
+  dbt_test_project: 
+    dim_customer: 
+      materialized: table

@@ -1,12 +1,13 @@
-dbt_test_profile:   # Can be any name; must match dbt_project.yml
+
+dbt_test_profile:
   target: dev
   outputs:
     dev:
       type: snowflake
-      account: JJIVGWT-CJ95375  # Example: abcd-xy12345 (NO .snowflakecomputing.com)
+      account: JJIVGWT-CJ95375
       user: ANKYZ
-      password: Axelblaz@0075295
-      role: ACCOUNTADMIN          # Or any role with write access
+      password: Axelblaz@0075295         # make sure there are no extra spaces
+      role: ACCOUNTADMIN
       database: DBT_TEST_DB
       warehouse: COMPUTE_WH
       schema: DBT_TEST_SCHEMA

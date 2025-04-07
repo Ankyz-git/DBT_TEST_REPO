@@ -1,0 +1,6 @@
+sources:
+  - name: dbt_test_source
+    database: dbt_test_db
+    schema: dbt_test_schema
+    tables: 
+      - name: fact_sales
